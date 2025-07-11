@@ -1,0 +1,15 @@
+/*
+Prog2a
+Elabore um programa que escreva 3 caracteres no MLCD
+
+Prog2b
+Elabore um programa que escreva o seu nome na primeira linha do MLCD
+e ano, turma e subturma na segunda linha de forma centralizada.
+
+Prog02c
+Em seguida apague o seu último nome na primeira linha
+
+Em tempo: Vamos apagar o cursor do MLCD. 
+Altere a linha de comando correspondente na função 
+Init_MLCD
+*/

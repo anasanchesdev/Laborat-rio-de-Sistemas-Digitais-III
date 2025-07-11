@@ -1,0 +1,46 @@
+Prog04: Anunciador visual
+
+ Elabore um programa para o kit MSP430F1611 que implemente a função de anunciador visual
+ de paradas do metrô, para atender aos deficientes auditivos.
+Durante as viagens do metrô, o condutor anuncia pelos autofalantes o nome da próxima parada.
+Mas os deficientes auditivos precisam desta informação de forma visual, em um display 
+por exemplo.  
+Na primeira linha do display será exibida a frase “Proxima parada:” e na segunda linha, 
+o nome da estação.
+
+	1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+Linha 1:P r o x i m a   p a  r  a  d  a  :	
+Linha 2:E s t   V i l a r i  n  h  o			
+
+O início de uma viagem acontece na primeira estação listada abaixo. O condutor é responsável 
+por gerar um pulso de nível alto em P1.0 logo que ocorrer a partida de uma estação, para 
+que a mensagem no display exiba o nome da próxima estação. 
+Lembre-se que ao chegar a um dos extremos da linha, a composição retorna, passando pelas
+estações, agora em sentido inverso. 
+A cada novo anúncio de estação, o bit P1.7, que comandará uma lâmpada, 
+que deverá acender por 3 segundos, fazendo o reforço com a sinalização visual.
+
+Lista de estações:
+"Est VILARINHO   "
+"Est FLORAMAR    "
+"Est WALDO LOBO  "
+"Est 1o. DE MAIO "
+"Est SAO GABRIEL "
+"Est MINAS SHOPP "
+"Est J. CANDIDO  "  
+"Est SANTA INES	 "
+"Est HORTO	 "
+"Est STA TEREZA	 "
+"Est STA EFIGENIA"
+"Est CENTRAL	 "
+"Est LAGOINHA    "
+'Est C. PRATES	 "
+'Est CALAFATE	 "
+'Est GAMELEIRA	 "
+'Est VILA OESTE	 "
+'Est ELDORADO	 "
+
+Sugestão: criar uma matriz de caracteres
+char Estacoes[18][17] = {"Est VILARINHO   ",
+                         "Est FLORAMAR    ",
+                     assim por diante       };

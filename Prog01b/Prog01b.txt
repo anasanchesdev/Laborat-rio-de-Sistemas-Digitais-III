@@ -1,0 +1,6 @@
+Prog01b: Relé de falta de fase
+Altere a versão “a” para que o led pisque na frequência de 1Hz ao contrário de permanecer aceso. 
+Utilize a função __delay_cycles.
+
+Fclk = 750kHz tanto para o kit F1611 como para o kit F149.
+

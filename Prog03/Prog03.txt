@@ -1,0 +1,13 @@
+/*
+Prog03: Relé de falta de fase com interface alfanumérica
+Elaborar uma nova versão do programa Prog01 que, agora, contará com a exibição,
+no MLCD do status de cada fase, assim como da saída para a habilitação do motor.
+Utilize a seguinte formatação no MLCD:
+
+	Colunas
+         1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16
+Linha 1: F  a  s  e  s  :  A  B  C    M  o  t  o  r	
+Linha 2:                   1  1  0    0					
+*/
+
+
